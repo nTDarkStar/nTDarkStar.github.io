@@ -1,24 +1,29 @@
 @font-face {
-	font-family: 'VCR OSD Mono';
-	src: url('../fonts/VCR_OSD_MONO_1.001.ttf');
+    font-family: 'Ubuntu';
+    src: url('http://www.google.com/webfonts/specimen/Ubuntu');
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'VCR OSD Mono', serif!important; 
-	color: white;
-	font-style: italic, bold;
-    text-shadow: 1px 2px black;
+    margin: 1;
+    padding: 1;
+    font-family: 'Ubuntu', serif!important;
+    color: white;
 }
 
-h1 {font-size: 3em; margin: 0.5em;}
+h1 {
+    font-size: 3em;
+    margin: 0.5em;
+}
 
-i {margin: 14px;}
+i {
+    margin: 15px;
+}
 
-a {color: white; text-decoration: none;}
+a {
+    color: white;
+    text-decoration: none;
+}
+
 a:hover {
-    color: lightgray;
+    color: #d3d3d3;
 }
-
-@import 'dist/japanese-fonts.min.css';
