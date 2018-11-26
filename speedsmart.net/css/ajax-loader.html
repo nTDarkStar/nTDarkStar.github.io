@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="apple-itunes-app" content="app-id=366593092">
+    <meta name="google-play-app" content="app-id=com.veeapps.simplespeed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->  
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title>SpeedSmart - 404 - HTML5 Internet Speed Test</title>
+    <meta itemprop="name" content="Speedsmart.net, HTML5 Speed Test, Internet Speed Test"/>
+    <!-- <meta name="description" content="How fast is your internet speed? In seconds, Speedsmart.net's simple HTML5 speed test to test how fast your broadband or mobile internet connection really is across every device." > -->
+    <meta name="description" content="SpeedSmart.net is an HTML5 Internet speed test. Test your Internet connection bandwidth in seconds to locations all around the world with this broadband speed test to see how fast your home or mobile internet connection really is across every device." >
+    <meta name="keywords" lang="en" content="download, upload, ping, latency, html5, broadband, internet, speed test, speed, test, speedtest, network">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <link rel="icon" type="image/png" href="https://speedsmart.net/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://speedsmart.net/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="https://speedsmart.net/images/fav_icon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://speedsmart.net/images/fav_icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://speedsmart.net/images/fav_icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://speedsmart.net/images/fav_icon/apple-icon-152x152.png">
+    <link rel="icon" sizes="192x192" href="https://speedsmart.net/images/fav_icon/android-icon-192x192.png"/>
+    <link rel="icon" sizes="128x128" href="https://speedsmart.net/images/fav_icon/android-icon-144x144.png"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://speedsmart.net/css/style.min.css?v=1105" />
+    <link rel="stylesheet" type="text/css" href="https://speedsmart.net/css/smart-app-banner.css">
+    <link rel="stylesheet" type="text/css" href="https://speedsmart.net/css/menu.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>            
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://speedsmart.net/js/main.min.js?b16051"></script>    
+    <script type="text/javascript" src="https://speedsmart.net/js/smart-app-banner.js"></script>
+    <script type="text/javascript" src="https://speedsmart.net/js/jquery.min.js"></script>
+</head>
+<body>
+
+	<!-- Action Button -->
+		    <a href="https://speedsmart.net/start" class="action_button" onMouseOver="action_show('action_message')" onMouseOut="action_hide('action_message')"></a>
+	    <div class="action_button_message" id="action_message">Start a Speedtest</div>
+	
+	<!-- Start Header -->
+	    	<header class="header_gray">
+	    	
+        <div class="container">
+  
+          <div class="header_row ">
+  
+              <div class="header_left">
+                
+                  <div class="logo">
+                      <a href="https://speedsmart.net"><img src="https://speedsmart.net/images/icon_dark-2.png" alt="Icon" />SpeedSmart</a> 
+                  </div>
+
+                  <div class="logo_small">
+                      <a href="https://speedsmart.net"><img src="https://speedsmart.net/images/icon_dark_small.png" alt="Icon" /> <div class="logo_small_title">SpeedSmart</div></a> 
+                  </div>
+  
+              </div>
+  
+              <div class="header_right">
+
+                    
+                    <div class="menu_normal">
+                      <a href="https://speedsmart.net/history" class="header_link">Result History</a>
+                      <a href="https://speedsmart.net/wireless_index" class="header_link">Speed Index</a>
+                      <a href="#" onclick="login_show('login_view');" class="header_link">Login / Register</a>
+                      <a href="https://blog.speedsmart.net" class="header_link">Blog</a>
+                      <a href="https://speedsmart.net/app" class="header_action">Get the App</a>
+                    </div>
+  
+                                    
+                  <div class="menu_mobile">
+                      <div class="menu_button" onclick="toggle_visibility('navigation');"></div>
+                  </div>
+  
+              </div>
+  
+          </div>
+
+        </div>
+
+    </header>
+
+    <!-- Responsive Mobile Menu -->
+    <div class="nav" id="navigation">
+
+        <div class="nav_sidebar" id="nav_sidebar">
+    
+          <div id="nav_outer">
+            
+            <div id="nav_inner">
+            
+              <div id="nav_content">
+  
+                  <div class="nav_close" onclick="toggle_hide('navigation');">&times;</div>
+  
+                  <div class="menu_header">Menu</div>
+                
+                  <div id='cssmenu'>
+  
+                    <ul>
+                       <li><a href='https://speedsmart.net'><span >Start a Speedtest</span></a></li>
+                       <li><a href='https://speedsmart.net/app'><span >Get the App</span></a></li>
+                       <li><a href='https://speedsmart.net/history'><span >Result History</span></a></li>
+                       <li><a href='https://speedsmart.net/wireless_index/'><span >Speed Index</span></a></li>
+                       <li><a href='https://blog.speedsmart.net'><span>Blog</span></a></li>
+                       <li class='last'><a href='https://speedsmart.net/app#contact' class="navItem"><span>Contact Us</span></a></li>
+                    </ul>
+  
+                  </div>
+  
+                  <div class="menu_header">Account</div>
+                
+                  <div id='cssmenu'>
+
+                    
+                    <ul>
+                       <li class='last'><a href='#' onclick="login_show('login_view');"><span>Login / Register</span></a></li>
+                    </ul>
+  
+                  
+                  </div>
+
+                  <div class="menu_header">Follow Us</div>
+  
+                  <div class="sidebar">
+                    
+                    <a href="https://www.facebook.com/speedsmart" target="_blank">
+                      <img src="https://speedsmart.net/images/sidebar_facebook_dark.png" alt="Facebook" />  
+                    </a>
+                    <a href="http://twitter.com/speedsmart" target="_blank">
+                      <img src="https://speedsmart.net/images/sidebar_twitter_dark.png" alt="Twitter" />
+                    </a>
+  
+                  </div>
+  
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="nav_touch_close" onclick="toggle_hide('navigation');"></div>
+
+    </div>
+
+    <!-- Login View -->
+    <div class="login_bg" id="login_view">
+      
+          <div class="login_close" onclick="login_close('login_view');">&times;</div>
+
+          <div class="login_error" id='login_error'><strong>Opps</strong> Twitter login is currently not ready, it will be available shortly. Please login with Facebook for now. </div>
+
+          <div class="login_center" id="login_content">
+
+              <div class="login_title">Connect <strong>With</strong></div>
+              
+              <div class="login_button login_facebook" onClick="location.href='https://speedsmart.net/login_fb'"></div>
+
+              <div class="login_button login_twitter" onclick="location.href='https://speedsmart.net/login_tw'"></div>
+
+              <div class="login_message">Login with your Facebook or Twitter account to view results taken from different browsers or multipe devices, remove your past results, set a default speed test server & more.</div>
+
+          </div>
+
+    </div>
+
+    <!-- Settings View -->
+    <div class="login_bg" id="settings_view">
+      
+          <div class="login_close" onclick="settings_close('settings_view');">&times;</div>
+
+          <div class="login_center" id="settings_content">
+
+              <div class="login_title">Hi, <strong></strong></div>
+
+              <div class="login_button login_logout button_blue" onClick="location.href='https://speedsmart.net/export_history'">Export History</div>
+
+              <!-- <div class="login_button login_logout button_green" onClick="location.href='https://speedsmart.net/logout'">Clear All Data</div> -->
+              
+              <div class="login_button login_logout" onClick="location.href='https://speedsmart.net/logout'">Logout</div>
+
+              <div class="login_message">Welcome to your account & settings panel, currenly you can just logout of your account from here but check back soon for more options.</div>
+
+          </div>
+
+    </div>
+
+	<!-- Start Page Content -->
+
+<div style="padding-top: 65px;"></div>
+
+	
+    <div class="header_spacer"></div>
+
+    <!-- 404 -->
+    <div class="container_narrow clearfix">
+
+        <div class="main_section main_section_last">
+
+                <div class="error_404">
+                    
+                    <img src="https://speedsmart.net/images/404_main.png" />
+
+                </div>
+
+                <div class="error_404_message">
+                    
+                    Sorry we couldn't find the page your looking for. It does not exist <strong>or</strong> has been moved <strong>or</strong> maybe it was eaten by a shark, those things are dangerious you know!
+                    <br /><br />
+                    <a href="https://speedsmart.net" class="app_more_button">Go Home</a>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="spacer_noextra"></div>
+    
+
+
+
+	<!-- End Page Content -->
+
+	<!-- Footer -->
+	<footer>
+
+	    <a href="https://www.facebook.com/speedsmart"><img src="https://speedsmart.net/images/footer_facebook.png" alt="Facebook" /></a> 
+	    <a href="https://twitter.com/speedsmart"><img src="https://speedsmart.net/images/footer_twitter.png" alt="Twitter" /></a>
+
+	    <h2 class="center_text">
+	        Copyright &copy; 2018 SpeedSmart.net
+	        <br />
+	        <a href="https://speedsmart.net/app#contact">Contact Us</a> &nbsp; <a href="https://speedsmart.net/terms">Terms & Privacy</a> &nbsp; <a href="https://speedsmart.net/host">Become a Host</a>
+	    </h2>
+
+	</footer>
+
+<!-- Attached Javascript -->
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 50) {
+        $(".header_gray").addClass("active");
+        $(".header_action").addClass("header_action_fill");
+                    } else {
+       $(".header_gray").removeClass("active");
+       $(".header_action").removeClass("header_action_fill");
+                  }
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60514675-1', 'auto');
+  ga('send', 'pageview');
+</script>

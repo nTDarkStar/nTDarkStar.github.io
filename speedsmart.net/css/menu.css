@@ -1,0 +1,269 @@
+/* Copyright 2016, Speedsmart.net. All Rights Reserved. We will take legal action against those who copy our HTML content, CSS style sheets and JavaScript functions. */
+/* Menu Navigation */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.10);
+  z-index: 2000;
+  display: none;
+  opacity: 0;
+  user-select: none;
+}
+
+.nav_sidebar {
+  float: right;
+  background: #fff;
+  width: 380px;
+  height: 100%;
+  margin: 0 -380px 0 0;
+  z-index: 3000;
+}
+
+.dark_sidebar {
+  background: #222;
+}
+
+#nav_outer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#nav_inner {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -20px;
+    overflow-x: hidden;
+    overflow-y: scroll; /*or auto*/
+}
+
+#nav_content {
+  width: 100%;
+  height: auto;
+  margin-left: 0px; /*20px*/
+  padding-top: 15px; /*30px*/
+}
+
+.nav_close {
+  position: absolute;
+  top: 17px; /*32px*/
+  left: 308px;
+  float: right;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #fc4035;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  user-select: none;
+  z-index: 3500;
+  transition: transform .25s ease-in-out;
+}
+
+.nav_close:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: rotate(360deg);
+}
+
+.nav_close_dark {
+  background: transparent;
+  color: #919191;
+}
+
+.nav_touch_close {
+  width: 100%;
+  height: 100%;
+  z-index: 2100;
+}
+
+.menu_header {
+  width: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /*13px*/
+  color: #444;
+  font-weight: 300;
+  padding: 0 35px;
+  margin: 18px 0 15px 0;
+  opacity: 0.70;
+}
+
+.menu_header_dark {
+  color: #999;
+}
+
+.sidebar {
+  margin-left: 32px;
+}
+
+.sidebar a {
+  /*border: 1px solid #fff;*/
+  text-decoration: none;
+}
+
+.sidebar img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0 4px 14px 4px;
+  opacity: 1;
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+.sidebar img:hover {
+  opacity: 0.80;
+}
+
+/*.sidebar img:hover {
+  opacity: 0.60;
+  transition: all 0.3s ease-in;
+}
+
+.sidebar img:not(hover) {
+  opacity: 0.30;
+  transition: all 0.3s ease-in;
+}*/
+
+
+.currentPage {
+  color: #1792df;
+}
+
+
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.3;
+  padding: 14px 35px;
+}
+#cssmenu {
+  width: 100%;
+}
+#cssmenu > ul > li {
+  cursor: pointer;
+  /*border-bottom: 1px solid #4c4e53;*/
+}
+#cssmenu > ul > li:last-child {
+  /*border-bottom: 1px solid #3e3d3c;*/
+}
+#cssmenu > ul > li > a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  color: #222;
+  background: transparent;
+  transition: all .15s ease-in;
+
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+  background:rgba(0,0,0,0.05);
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+  background:rgba(0,0,0,.20); /* Current Selected */
+}
+/*#cssmenu > ul > li.active > a:hover {
+  background:rgba(0,0,0,.40);
+}
+*/#cssmenu > ul > li.has-sub > a:after {
+  content: "";
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  right: 15px; /*Padding right*/
+  border: 7px solid transparent;
+  border-left: 7px solid #fff;
+  opacity: 0.60;
+}
+#cssmenu > ul > li.has-sub.active{
+  /*border-top: 1px solid #999;*/
+  /*padding: 0 0 10px 0;*/
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+#cssmenu > ul > li.has-sub.active > a:after {
+  right: 21px;
+  top: 19px;
+  border: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+/* Sub menu */
+#cssmenu ul ul {
+  padding: 0;
+  display: none;
+}
+#cssmenu ul ul a {
+  background: transparent;
+  display: block;
+  color: rgba(255,255,255,.65);
+  font-size: 14px;
+  padding-left: 23px;
+}
+
+#cssmenu ul ul a:hover {
+  background:rgba(0,0,0,.40);
+}
+
+#cssmenu ul ul li {
+  /*border-bottom: 1px solid #c9c9c9;*/
+}
+#cssmenu ul ul li.odd a {
+  background: #e5e5e5;
+}
+#cssmenu ul ul li:last-child {
+  border: none;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .nav_sidebar {
+    width: 320px;
+    height: 100%;
+    /*margin: 0 -440px 0 0;*/
+  }
+
+  #nav_content {
+    width: 320px;
+  }
+
+  .nav_close {
+    left: 248px;
+  }
+
+  #cssmenu > ul > li > a {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+}
